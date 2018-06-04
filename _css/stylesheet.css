@@ -26,12 +26,7 @@ body {
     padding: 30px;
 }
 
-#topNav a:hover {
-    color: yellow;
-    background: #121212;
-}
-
-#topNav a:active {
+#topNav a:hover, #topNav a:active {
     color: yellow;
     background: #121212;
 }
@@ -60,20 +55,20 @@ article {
     list-style-type: none;
 }
 
-.breadcrumb a {
+.breadcrumb li {
     display: inline-block;
     color: #000;
     font-size: .8em;
     text-decoration: none;
 }
 
-.breadcrumb li+li:before {
+.breadcrumb li+li::before {
     padding: 2px;
     color: black;
     content: ">"
 }
 
-/* fucking slider 
+/* fucking slider  */
 
 .slider-holder {
     float: left;
@@ -132,4 +127,4 @@ article {
     width: 10px;
     border-radius: 5px;
     background-color: brown;
-} */
+}

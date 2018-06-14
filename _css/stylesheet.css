@@ -48,7 +48,7 @@ article {
     margin: 18px;
     width: 59%;
     /* if slider ;*/
-    padding-top: 30%;
+    /* padding-top: 30%; */
     text-align: justify;
 }
 
@@ -145,3 +145,4 @@ article {
 .postinfo a {
     text-decoration: none;
 }
+

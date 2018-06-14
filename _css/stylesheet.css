@@ -1,5 +1,5 @@
 body {
-    margin: 0px 0px 0px;
+    margin: 0 0 0;
     font-family: Roboto, Arial, sans-serif;
 }
 
@@ -13,14 +13,14 @@ body {
 #topNav ul {
     list-style-type: none;
     font-size: 1.2em;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 #topNav .menu a {
     display: inline-block;
     text-decoration: none;
-    margin: 0px;
+    margin: 0;
     color: white;
     letter-spacing: 2px;
     padding: 30px;
@@ -28,7 +28,7 @@ body {
 
 #topNav a:hover, #topNav a:active {
     color: yellow;
-    background: #121212;
+    background: #0B0B0B;
 }
 
 .searchbar {
@@ -45,25 +45,25 @@ input[type=text] {
 }
 
 article {
-    margin: 12px;
-    width: 65%;
-    /* if slider 
-    padding-top: 30%;*/
+    margin: 18px;
+    width: 59%;
+    /* if slider ;*/
+    padding-top: 30%;
+    text-align: justify;
 }
 
-.breadcrumb ul {
-    list-style-type: none;
+.breadcrumb a {
+    text-decoration: none;
+    color: #000;
 }
 
 .breadcrumb li {
     display: inline-block;
-    color: #000;
     font-size: .8em;
-    text-decoration: none;
 }
 
 .breadcrumb li+li::before {
-    padding: 2px;
+    padding-right: 3px;
     color: black;
     content: ">"
 }
@@ -75,7 +75,7 @@ article {
     width: 800px;
     height: 400px;
     background-color: yellow;
-    margin-left: auto;
+    margin-left: 16px;
     margin-right: auto;
     margin-top: 0px;
     text-align: center;
@@ -84,7 +84,7 @@ article {
 
 .image-holder {
     width: 2400px;
-    background-color: red;
+    background-color: #252323;
     height: 400px;
     clear: both;
     position: relative;
@@ -99,13 +99,14 @@ article {
     width: 800px;
     height: 400px;
     float: left;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     position: relative;
+    opacity: 0.6;
 }
 
 #sliderImage1:target ~ .image-holder {
-    left: 0px;
+    left: 0;
 }
 
 #sliderImage2:target ~ .image-holder {
@@ -126,5 +127,21 @@ article {
     height: 10px;
     width: 10px;
     border-radius: 5px;
-    background-color: brown;
+    background-color: #FFC300;
+}
+
+.postinfo {
+    display: block;
+    width: 800px;
+    margin: -10px 0 0 -2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #171717;
+    color: white;
+    font-size: .8em;
+    text-align: right; 
+}
+
+.postinfo a {
+    text-decoration: none;
 }

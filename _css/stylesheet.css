@@ -6,6 +6,7 @@ body {
 
 #topNav {
     width: 100%;
+    margin-bottom: 15px;
     color: white;
     background-color: black;
 }
@@ -44,13 +45,15 @@ input[type=text] {
     border-radius: 3px;
 }
 
-article {
-    margin: 18px;
-    width: 59%;
-    /* if slider ;*/
-    padding-top: 30%;
-    text-align: justify;
+main {
+    /* background-color: lavender; */
+    /*width: 72%;*/
+    width: 56%;
+    float: left;
+    padding: 0 13% 0 3%;
 }
+
+/************** breadcrumb *************/
 
 .breadcrumb a {
     text-decoration: none;
@@ -68,7 +71,20 @@ article {
     content: ">"
 }
 
-/* fucking slider  */
+.breadcrumb ul {
+    padding: 0;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.banner {
+    /* width: 75%;*/
+    /* margin-left: 4%; */
+}
+/* fucking slider  
 
 .slider-holder {
     float: left;
@@ -128,7 +144,16 @@ article {
     width: 10px;
     border-radius: 5px;
     background-color: #FFC300;
+} */
+
+
+article {
+    margin-top: 18px;
+    /* width: 75%; */
+    /* if slider ;*/
+    text-align: justify;
 }
+
 
 /*.postinfo {
     display: block;
@@ -152,29 +177,65 @@ article {
     background-color: yellow;
     float: right;
     width: 25%;
-    height: 570px;
+    /* height: 600px; */
     /*margin-top: -574px;*/
-    margin-right: 30px;
-    overflow: scroll;
+    margin-right: 2%;
+    /* overflow-y: scroll; */
+    padding-top: 15px;
+}
+
+.album-list div {
+    /* background-color: lavender; */
+    border-bottom: 1px solid rgba(0,0,0,.3);
+    clear: both;
+    min-height: 130px;
+    padding: 10px 0;
+}
+
+.album-list div:last-child {
+    border-bottom: none;
 }
 
 .side-pictures {
     float: left;
     width: 130px;
-    height: 130px;
+    height: auto;
     margin-right: 10px;
 }
 
 .sidenav h2, dl {
-    margin-left: 10px;
+    margin: 0 10px;
 }
 
 .sidenav h2 {
     font-size: 20px;
 }
 
-.album-list dt, dl {
+.album-list dt, dd {
     /*float: right;*/
     margin-bottom: 15px;
+    overflow: hidden;
     
+}
+
+.album-list dt {
+    font-weight: bold; 
+
+}
+
+.album-list dd {
+    font-size: 14px;
+}
+
+.album-list dt span {
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    padding-top: 4px;
+    border-top: 1px dotted rgba(0,0,0,.1); 
+    margin: 3px 30px 0 0;
+}
+
+footer {
+    clear: both;
 }

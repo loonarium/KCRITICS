@@ -3,7 +3,9 @@ body {
     font-family: Roboto, Arial, sans-serif;
 }
 
-
+    /******************
+        Top navigation 
+    *******************/
 #topNav {
     width: 100%;
     margin-bottom: 15px;
@@ -31,7 +33,13 @@ body {
     color: yellow;
     background: #0B0B0B;
 }
+    /*******************
+        End of top nav 
+    *******************/
 
+    /****************
+        Search bar 
+    *****************/
 .searchbar {
     float: right;
     margin-top: -55px;
@@ -44,17 +52,19 @@ input[type=text] {
     border: 1px;
     border-radius: 3px;
 }
+    /*********************
+        End of search bar  
+    *********************/
 
 main {
-    /* background-color: lavender; */
-    /*width: 72%;*/
     width: 56%;
     float: left;
     padding: 0 13% 0 3%;
 }
 
-/************** breadcrumb *************/
-
+    /**************
+        Breadcrumb 
+    **************/
 .breadcrumb a {
     text-decoration: none;
     color: #000;
@@ -74,16 +84,20 @@ main {
 .breadcrumb ul {
     padding: 0;
 }
+    /*********************
+        End of Breadcrumb
+    *********************/
 
 .banner img {
     max-width: 100%;
     height: auto;
+    opacity: .9;
 }
 
-.banner {
-    /* width: 75%;*/
-    /* margin-left: 4%; */
-}
+/* .banner {
+    width: 75%;
+    margin-left: 4%;
+} */
 /* fucking slider  
 
 .slider-holder {
@@ -146,11 +160,9 @@ main {
     background-color: #FFC300;
 } */
 
-
 article {
     margin-top: 18px;
     /* width: 75%; */
-    /* if slider ;*/
     text-align: justify;
 }
 
@@ -171,29 +183,41 @@ article {
     text-decoration: none;
 }*/
 
-/* sidebar */
-
+    /************
+     Sidebar 
+    *************/
 .sidenav {
     background-color: yellow;
     float: right;
     width: 25%;
-    /* height: 600px; */
-    /*margin-top: -574px;*/
     margin-right: 2%;
-    /* overflow-y: scroll; */
     padding-top: 15px;
 }
 
 .album-list div {
-    /* background-color: lavender; */
     border-bottom: 1px solid rgba(0,0,0,.3);
     clear: both;
     min-height: 130px;
-    padding: 10px 0;
+    padding: 10px;
+    /* transition: all .2s linear; */
 }
 
 .album-list div:last-child {
     border-bottom: none;
+}
+
+.album-list div:hover {
+    background-color: black;
+    color: yellow;
+}
+
+.album-list div:hover dt span {
+    border-color: rgba(255,255,255,.2);
+}
+
+.album-list div *::selection {
+    background: yellow;
+    color: black;
 }
 
 .side-pictures {
@@ -203,7 +227,7 @@ article {
     margin-right: 10px;
 }
 
-.sidenav h2, dl {
+.sidenav h2 {
     margin: 0 10px;
 }
 
